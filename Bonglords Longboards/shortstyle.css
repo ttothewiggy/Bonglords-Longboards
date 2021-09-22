@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Lustria", Serif;
+  font-size: 48px;
+  src: url(https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lustria&display=swap);
+}
+
+/*--- Buttons --- */
+
+button {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover {
+  background-color: #385c82;
+}
+
+#logo > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- anchors --- */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button > a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: grey;
+}
+a:focus {
+  color: white;
+}
+a:active {
+  color: white;
+}
+
+/* --- Header --- */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  text-align: center;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  color: white;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+}
+
+#logo {
+  font-size: 18px;
+}
+
+/*--- DropDown ---*/
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #385c82;
+}
+
+/* --- Grid System --- */
+
+.grid-system {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 1080px;
+
+  background-image: url(images/pexels-lachlan-ross-5967749.jpeg);
+  background-size: 1920px 1080px, cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  margin-left: -0.5em;
+}
+
+body {
+  font-family: "Lustria", serif;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.blurb {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-size: 25px;
+  margin-left: 0.5em;
+  margin-top: -2em;
+}
+
+.board-1 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 7;
+
+  border: solid medium black;
+  border-radius: 7px;
+
+  background-image: url(images/salty_6.jpeg);
+  background-size: 412px 540px;
+  max-height: 540px;
+  max-width: 412px;
+}
+
+.board-1-info {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  background-color: hsla(0, 0%, 50%, 0.6);
+  max-width: 402px;
+
+  font-size: 20px;
+
+  border: solid medium black;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+
+.board-2 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 7;
+
+  border: solid medium black;
+  border-radius: 7px;
+
+  background-image: url(images/Dead-Kooks-Surfboards_Hellhound_00_WEB_1024x1024.jpeg);
+  background-size: 412px 540px;
+  max-height: 540px;
+  max-width: 412px;
+}
+
+.board-2-info {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  background-color: hsla(0, 0%, 50%, 0.6);
+  max-width: 402px;
+
+  font-size: 20px;
+
+  border: solid medium black;
+  border-radius: 7px;
+  padding-left: 10px;
+}
