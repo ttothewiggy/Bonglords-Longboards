@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "Lustria", Serif;
+  font-size: 48px;
+  src: url(https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lustria&display=swap);
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+/*--- Buttons --- */
+
+button {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover {
+  background-color: #385c82;
+}
+
+#logo > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- anchors --- */
+
+button > a {
+  color: white;
+  text-decoration: none;
+}
+
+button > a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: grey;
+}
+a:focus {
+  color: white;
+}
+a:active {
+  color: white;
+}
+
+/* --- Header --- */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  text-align: center;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  color: white;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+}
+
+#logo {
+  font-size: 18px;
+}
+
+/*--- DropDown ---*/
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #385c82;
+}
+
+/* --- Grid System --- */
+
+.grid-system {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+  height: 1080px;
+
+  background-image: url(images/b&wsurfer.jpg);
+  background-size: 1920px 1080px, cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  margin-left: -0.5em;
+}
+
+/* --- Body --- */
+
+body {
+  font-family: "Lustria", serif;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.blurb {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-size: 32px;
+  margin-left: 0.5em;
+}
+
+/* --- Body Part 2 --- */
+
+.part-2 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 1080px;
+
+  background-image: url(images/b&wshort.jpg);
+  background-size: 1920px 1080px, cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: -0.5em;
+}
+
+.blurb-2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-size: 32px;
+  margin-left: 0.5em;
+}
+/* --- Box 1 --- */
+
+.box-1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+
+  border: solid medium black;
+  border-radius: 7px;
+
+  background-image: url(images/box1-colour.jpg);
+  background-size: 315px 405px;
+  max-width: 315px;
+  max-height: 405px;
+}
+
+.a.button {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+
+  background-color: hsl(0, 0%, 50%);
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
+
+.box-1-heading {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+  font-family: "Courier New", Courier, monospace, "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box-1-heading:link {
+  color: black;
+  text-decoration: none;
+}
+
+.box-1-heading:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.box-1-heading:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.box-1-heading:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.box-1-heading:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* --- Box 2 --- */
+
+.box-2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 7;
+
+  border: solid medium;
+  border-radius: 7px;
+
+  background-image: url(images/box2.2-colour.jpg);
+  background-size: 315px 405px;
+  max-width: 315px;
+  max-height: 405px;
+  background-repeat: no-repeat;
+}
+
+.box-2-heading {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+  font-family: "Courier New", Courier, monospace, "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box-2-heading:link {
+  color: black;
+  text-decoration: none;
+}
+
+.box-2-heading:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.box-2-heading:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.box-2-heading:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.box-2-heading:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* --- Box 3 --- */
+
+.box-3 {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 7;
+
+  border: solid medium;
+  border-radius: 7px;
+
+  background-image: url(images/box.jpg);
+  background-size: 315px 405px;
+  max-width: 315px;
+  max-height: 405px;
+}
+
+.box-3-heading {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+  font-family: "Courier New", Courier, monospace, "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.box-3-heading:link {
+  color: black;
+  text-decoration: none;
+}
+
+.box-3-heading:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.box-3-heading:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.box-3-heading:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.box-3-heading:active {
+  color: black;
+  text-decoration: none;
+}
+
+/* ---Footer---*/
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 300px;
+  margin-top: 0px;
+}
+
+.map {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  padding-top: 1em;
+  padding-left: 2em;
+}
+
+iframe {
+  height: 270px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
